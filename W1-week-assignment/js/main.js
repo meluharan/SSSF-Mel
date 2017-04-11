@@ -33,10 +33,11 @@ const displayTumbnails = () => {
                             <p><button class="btn btn-primary">View</button></p>
                         </div>
                         `;
-        article.addEventListener('click', (evt) => {
+            article.addEventListener('click', (evt) => {
             document.querySelector('.modal-body img').src = item.image;
             document.querySelector('.modal-title').innerHTML = item.title;
             $('#myModal').modal('show');
+
             console.log($('#myModal'));
 
         });
